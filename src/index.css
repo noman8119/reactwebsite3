@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,100&display=swap');
+p{
+  font-family: 'Glory', sans-serif;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/* .cards{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+} */
+/* .card{
+  width:5%;
+  height:auto;
+} */
+/* 
+.card{
+  width: 18%;
+  padding: 15px;
+  float: left;
+  border-radius:10px;  
+}
+.card:hover{
+  box-shadow: 10px 4px 5px gray;
+
+}
+.card img{
+  width:100%;
+  height:auto;
+}
+.card a{
+  padding: 10px;
+  background-color: cornflowerblue;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.card-body{
+  text-align: center;
+} */
+.carousel-item img {
+
+    width: 100%;
+    height: auto;
+}
+.navbar-dark .navbar-nav .nav-link {
+    /* color: rgba(255,255,255,.55); */
+    display: inline;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+.carousel-control-next-icon {
+    border: 3px solid white;
+    padding: 20px;
+}
+.carousel-control-prev-icon {
+    border: 3px solid white;
+    padding: 20px;
+}
+.card img {
+    border-radius: 50%;
+}
+@media (min-width: 1200px) {
+    h3,
+    h3 {
+        font-size: 3.75rem!important;
+    }
+    .carousel-caption {
+        bottom: 15.25rem!important;
+    }
+}
+.carousel-caption h3 {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.carousel-caption p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 22px!important;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.img-sec {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.container1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.close {
+    position: absolute;
+    right: 0;
+    z-index: 999;
+
+}
+.modal {
+    position: relative;
+}
