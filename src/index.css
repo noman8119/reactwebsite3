@@ -130,3 +130,8 @@ code {
 .modal {
     position: relative;
 }
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  padding-top: 58px;
+}

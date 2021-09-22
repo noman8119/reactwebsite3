@@ -1,7 +1,7 @@
 import React from "react";
 const AboutSection = () => {
     return (
-        <div class="container  " id="demo1">
+        <div class="container  " id="demo1 ">
             <div className="jumbotron  mb-0 text-center bg-dark text-light">
                 <div className="container">
                     <h1>About Us</h1>

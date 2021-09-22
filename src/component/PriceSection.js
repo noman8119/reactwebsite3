@@ -3,7 +3,7 @@ import Price from './Price';
 import priceData from "./priceData";
 const PriceSection = () => {
     return (
-        <div className="container  bg-dark" id="demo3">
+        <div className="container  bg-dark" id="demo3 ">
             <div className="jumbotron  mb-0 text-center bg-dark text-light">
                 <div className="container">
                     <h1>Our Prices</h1>
