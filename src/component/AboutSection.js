@@ -1,64 +1,39 @@
 import React from "react";
+// import about from '../images/about-left.png';
 const AboutSection = () => {
     return (
-        <div class="container  " id="demo1 ">
-            <div className="jumbotron  mb-0 text-center bg-dark text-light">
-                <div className="container">
-                    <h1>About Us</h1>
-                    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                        responsive, mobile-first projects on the web.</p>
-                </div>
-            </div>
+        <section className="about-sec" id="demo1">
+        <div class="container " >
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <div class="about-sec">
-                        <h1 className="text-light">About Us</h1>
-                        <p className="text-light">
-                            There are many variations of passages of Lorem Ipsum available, but the majority
-                            have suffered alteration in some form, by injected humour, or randomised words
-                            which don't look even slightly believable. If you are going to use a passage of
-                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                            predefined chunks as necessary, making this the first true generator on the
-                            Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                            The generated Lorem Ipsum is therefore always free from repetition, injected
-                            humour, or non-characteristic words etc.
-                        </p>
-                    </div>
+                {/* <img className="header-right" src={about} alt="header-right"/> */}
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="img-sec">
-                        <img src="img/main1.png" width="100%" alt=""/>
-                        <div className="overlay" data-toggle="modal" data-target="#myModal">
-                            <img src="img/btn.png" width="100%" alt=""/>
-                        </div>
-                    </div>
+              <div className="about-right">
+<h5>About us</h5>
+<h3>We provide Creative solutions<br/> 
+to improve your business!
+</h3>
+<p>
+Lorem ipsum dolor sit amet consectetur adipising elit sedin 
+eiusmod tempor incididunt ut labore dolore magna aliqua
+Ut enim ad minim veniam, quis nostrud exercitation ullam
+com laboris nisi commodo consequat.
+</p>
+
+<ul>
+  <li>Eiusmod Tempor Incididunt ut Labore Dolore</li>
+  <li>Consequuntur Magni Dos Ratione Volup Tatem</li>
+  <li>Minus Id Quod Maxime Placeat Facere Possimus</li>
+  <li>Debitis Aut Rerum Necessitatibus Saepe Eveniet</li>
+</ul> 
+              </div>
                 </div>
             </div>
             {/* modal */}
-            <div class="modal modal p-0  bg-transparent" id="myModal">
-                <div class="modal-dialog modal-lg bg-transparent modal-dialog-centered">
-                    <div class="modal-content">
-                        <button type="button" class="close bg-transparent" data-dismiss="modal">&times;</button>
-                        <div class="modal-body close bg-transparent p-0">
-                            <div class="container1">
-                                <iframe
-                                    class="responsive-iframe"
-                                    width="1110"
-                                    height="465"
-                                    src="https://www.youtube.com/embed/_iPQyIaHsiA"
-                                    title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* modal end */}
+    
         </div>
+        </section>
     );
 }
 export default AboutSection;

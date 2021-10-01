@@ -15,19 +15,38 @@
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-        <!--
+            <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+            <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700'> -->
+            <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+            <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+            
+            <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
+<div className="column code col-lg-4 col-md-6 col-12 p-0">
+    <div className="content">
+      <img src={gal4}  alt="Car" />
+      <a href="#"  title="User Profile">
+      <div class="overlay">
+ 
+  <span>
+  <AddIcon className="icon"/>
+  </span>
 
+  </div>
+  </a>
+    </div>
+  </div>
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
         <title>React App</title>
     </head>
-    <body class="bg-dark">
+    <body >
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
 
@@ -41,15 +60,150 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
+   
+  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="smooth-scroll.polyfills.min.js"></script>
+       <script>
+              $(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+       </script>
+       <script>
+            jQuery(document).ready(function ($) {
+	var feedbackSlider = $(".feedback-slider");
+	feedbackSlider.owlCarousel({
+		items: 1,
+		nav: true,
+		dots: true,
+		autoplay: true,
+		loop: true,
+		mouseDrag: true,
+		touchDrag: true,
+		navText: [
+			"<i class='fa fa-long-arrow-left'></i>",
+			"<i class='fa fa-long-arrow-right'></i>"
+		],
+		responsive: {
+			// breakpoint from 767 up
+			767: {
+				nav: true,
+				dots: false
+			}
+		}
+	});
+
+	feedbackSlider.on("translate.owl.carousel", function () {
+		$(".feedback-slider-item h3")
+			.removeClass("animated fadeIn")
+			.css("opacity", "0");
+		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
+			.removeClass("animated zoomIn")
+			.css("opacity", "0");
+	});
+
+	feedbackSlider.on("translated.owl.carousel", function () {
+		$(".feedback-slider-item h3").addClass("animated fadeIn").css("opacity", "1");
+		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
+			.addClass("animated zoomIn")
+			.css("opacity", "1");
+	});
+	feedbackSlider.on("changed.owl.carousel", function (property) {
+		var current = property.item.index;
+		var prevThumb = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.prev()
+			.find("img")
+			.attr("src");
+		var nextThumb = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.next()
+			.find("img")
+			.attr("src");
+		var prevRating = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.prev()
+			.find("span")
+			.attr("data-rating");
+		var nextRating = $(property.target)
+			.find(".owl-item")
+			.eq(current)
+			.next()
+			.find("span")
+			.attr("data-rating");
+		$(".thumb-prev").find("img").attr("src", prevThumb);
+		$(".thumb-next").find("img").attr("src", nextThumb);
+		$(".thumb-prev")
+			.find("span")
+			.next()
+			.html(prevRating + '<i class="fa fa-star"></i>');
+		$(".thumb-next")
+			.find("span")
+			.next()
+			.html(nextRating + '<i class="fa fa-star"></i>');
+	});
+	$(".thumb-next").on("click", function () {
+		feedbackSlider.trigger("next.owl.carousel", [300]);
+		return false;
+	});
+	$(".thumb-prev").on("click", function () {
+		feedbackSlider.trigger("prev.owl.carousel", [300]);
+		return false;
+	});
+}); //end ready
+        </script>
+        <script>
+            $(document).ready(function(){
+          $(window).scroll(function(){
+              var scroll = $(window).scrollTop();
+              if (scroll > 150) {
+                $(".navbar1").addClass("blue");
+              
+              }
+        
+              else{
+                  $(".navbar1").removeClass("blue");  	
+              }
+          })
+        });
+        
+            </script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]', {});
         </script>
+        
     </body>
 </html>
+
