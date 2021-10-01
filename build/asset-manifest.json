@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/reactwebsite3/static/css/main.2e79dd69.chunk.css",
+    "main.js": "/reactwebsite3/static/js/main.5588f38f.chunk.js",
+    "main.js.map": "/reactwebsite3/static/js/main.5588f38f.chunk.js.map",
+    "runtime-main.js": "/reactwebsite3/static/js/runtime-main.2f74ed48.js",
+    "runtime-main.js.map": "/reactwebsite3/static/js/runtime-main.2f74ed48.js.map",
+    "static/css/2.818011ed.chunk.css": "/reactwebsite3/static/css/2.818011ed.chunk.css",
+    "static/js/2.86a94eeb.chunk.js": "/reactwebsite3/static/js/2.86a94eeb.chunk.js",
+    "static/js/2.86a94eeb.chunk.js.map": "/reactwebsite3/static/js/2.86a94eeb.chunk.js.map",
+    "index.html": "/reactwebsite3/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/reactwebsite3/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.2e79dd69.chunk.css.map": "/reactwebsite3/static/css/main.2e79dd69.chunk.css.map",
+    "static/js/2.86a94eeb.chunk.js.LICENSE.txt": "/reactwebsite3/static/js/2.86a94eeb.chunk.js.LICENSE.txt",
+    "static/media/boy.a285f63c.png": "/reactwebsite3/static/media/boy.a285f63c.png",
+    "static/media/index.css": "/reactwebsite3/static/media/roundbg.8924b52a.png",
+    "static/media/gal1.a4f887bf.png": "/reactwebsite3/static/media/gal1.a4f887bf.png",
+    "static/media/gal2.dd1c8464.png": "/reactwebsite3/static/media/gal2.dd1c8464.png",
+    "static/media/gal3.1ff86449.png": "/reactwebsite3/static/media/gal3.1ff86449.png",
+    "static/media/gal4.e25ef9b1.png": "/reactwebsite3/static/media/gal4.e25ef9b1.png",
+    "static/media/gal5.6475dcc7.png": "/reactwebsite3/static/media/gal5.6475dcc7.png",
+    "static/media/gal6.74004596.png": "/reactwebsite3/static/media/gal6.74004596.png",
+    "static/media/gal7.d75297bc.png": "/reactwebsite3/static/media/gal7.d75297bc.png",
+    "static/media/gal8.7b146c0c.png": "/reactwebsite3/static/media/gal8.7b146c0c.png",
+    "static/media/girl.a71ec6db.png": "/reactwebsite3/static/media/girl.a71ec6db.png",
+    "static/media/girl2.6c91d780.png": "/reactwebsite3/static/media/girl2.6c91d780.png",
+    "static/media/header-right.8b175c7c.png": "/reactwebsite3/static/media/header-right.8b175c7c.png",
+    "static/media/logo.10dd1865.png": "/reactwebsite3/static/media/logo.10dd1865.png",
+    "static/media/portfolio-right1.8da400c3.jpg": "/reactwebsite3/static/media/portfolio-right1.8da400c3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f74ed48.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.86a94eeb.chunk.js",
+    "static/css/main.2e79dd69.chunk.css",
+    "static/js/main.5588f38f.chunk.js"
+  ]
+}
